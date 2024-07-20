@@ -10,9 +10,9 @@ Statistics on company incorporation dates from UK Companies House.
 
 2. Change directory to `companies_house_data`
 
-2. Run `python extract_data.py --output_db_name=combined_data.parquet` to extract, clean and combine the companies house data into a single PARQUET file. The file of interest will be `filtered_combined_data.parquet`
+3. Run `python extract_data.py --output_db_name=combined_data.parquet` to extract, clean and combine the companies house data into a single PARQUET file. The file of interest will be `filtered_combined_data.parquet`
 
-3. Run 
+4. Run 
 ```
 python extract_company_creation_time_series.py \
     --input_db_name=filtered_combined_data.parquet \
@@ -23,7 +23,7 @@ python extract_company_creation_time_series.py \
 
 to produce an H5 file with number of companies incorporated at different postcode groups. Postcode groups are created by removing few last characters from individual [UK postcodes](https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom). This groups postcodes located nearby. In the code such postcodes are referred to as `simplified_pc`
 
-4. At this point one can proceed with individual analysis by working with contents of either the PARQUET database or time-series in the H5 file. An example of this is extraction of number of companies incorporated at a specific group of postcodes. Change directory to `uk_companies`
+5. At this point one can proceed with individual analysis by working with contents of either the PARQUET database or time-series in the H5 file. An example of this is extraction of number of companies incorporated at a specific group of postcodes. Change directory to `uk_companies`
 ```
 streamlit run  compare_traces.py -- --time_series_h5=companies_house_data/extracted_time_series_batch.h5
 ```
