@@ -6,7 +6,7 @@ Statistics on company incorporation dates from UK Companies House.
 
 0. Assuming presence of libraries such as `numpy`, `matplotlib`, `scipy`, `h5py`, `duckdb`, `pandas`
 
-1. Navigate to []companies house website](https://download.companieshouse.gov.uk/en_output.html) and download the basic data. Here we are expecting it to be downloaded as multiple files, e.g. `BasicCompanyData-2024-07-01-part1_7.zip` etc... Place files into `companies_house_data`
+1. Navigate to [companies house website](https://download.companieshouse.gov.uk/en_output.html) and download the basic data. Here we are expecting it to be downloaded as multiple files, e.g. `BasicCompanyData-2024-07-01-part1_7.zip` etc... Place files into `companies_house_data`
 
 2. Run `python extract_data.py --output_db_name=combined_data.parquet` to extract, clean and combine the companies house data into a single PARQUET file. The file of interest will be `filtered_combined_data.parquet`
 
