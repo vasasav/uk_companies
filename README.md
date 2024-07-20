@@ -29,3 +29,8 @@ streamlit run  compare_traces.py -- --time_series_h5=companies_house_data/extrac
 ```
 
 ![company incorporation count dynamics](company_inc_display.png)
+
+6. Interesting points to note:
+
+* At most address groups the number of companies is growing over time
+* Modelling number of companies incorporated at a specific postcode group as a Poisson process works relatively well. A bigger problem is the non-stationary nature of the incorporation rate. It has to be accounted for first
