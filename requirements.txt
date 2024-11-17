@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scipy
+h5py
+duckdb
+plotly
+streamlit
+scikit-learn
+jupyterlab
