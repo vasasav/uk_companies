@@ -4,7 +4,7 @@ Statistics on company incorporation dates from UK Companies House.
 
 ## Setup steps
 
-0. Assuming presence of libraries such as `numpy`, `matplotlib`, `scipy`, `h5py`, `duckdb`, `pandas`, `streamlit`. Use `requirements.txt` to set u suitable environment.
+0. Assuming presence of libraries such as `numpy`, `matplotlib`, `scipy`, `h5py`, `duckdb`, `pandas`, `streamlit`. Use `requirements.txt` to set up a suitable environment.
 
 1. Navigate to [companies house website](https://download.companieshouse.gov.uk/en_output.html) and download the basic data. Here we are expecting it to be downloaded as multiple files, e.g. `BasicCompanyData-2024-07-01-part1_7.zip` etc... Place files into `companies_house_data`. 
 
